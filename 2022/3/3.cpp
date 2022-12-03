@@ -23,7 +23,7 @@ int main(){
         points += (typee - 96);}
         
         else if(typee < 96){
-        points += (typee - 38);}//In ASCII 'A'=65 ,now 'A'=28
+        points += (typee - 38);}//In ASCII 'A'=65 ,now 'A'=27
         
         //cout<<typee<<endl;
         getline(cin,s);
