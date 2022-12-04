@@ -11,6 +11,9 @@ while line:
             overlap += 1
     elif sEnd >= fBeg:
         overlap += 1
+    #shorter way:
+    #if fEnd >= sBeg && fBeg <= sEnd:
+    #   overlap += 1
 
     line = input()
     
