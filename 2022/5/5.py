@@ -1,4 +1,3 @@
-contain = 0
 elements = []
 
 with open('data.txt','r') as infile:
