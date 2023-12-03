@@ -20,6 +20,9 @@ def gamez(lines: list[str]) -> int:
         if add: id_sum += int(id)
     return id_sum
 
+def gamez_one(lines: list[str]) -> int:
+    return sum([0 if False in [False for num_color in [subset.split() for subset in subsets.split(',')] if num_color[1] == 'red' and int(num_color[0]) > 12 or num_color[1] == 'green' and int(num_color[0]) > 13 or num_color[1] == 'blue' and int(num_color[0]) > 14] else int(id) for id, subsets in [(line.split()[1].replace(':', ''), line.split(':')[1].replace(';', ',')) for line in lines]])
+
 with open('input.txt','r') as infile:
     text = infile.read()
-    print( gamez(text.splitlines()) )
+    print( gamez_one(text.splitlines()) )
