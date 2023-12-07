@@ -1,0 +1,1 @@
+print([int(x2) - int(x1) for (x1, x2) in [( ((-time + s_delta) / -2), ((-time - s_delta) / -2) ) for (time, s_delta) in [(time, (time**2 - 4 * -1 * -distance)**(1 / 2))  for time, distance in zip([int(open('input.txt', 'r').read().splitlines()[0].split(':')[1].replace(" ", ""))], [int(open('input.txt', 'r').read().splitlines()[1].split(':')[1].replace(" ", ""))])]]][0])
